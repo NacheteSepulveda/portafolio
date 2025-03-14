@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import "./App.css";
 
 const GITHUB_USER = "NacheteSepulveda"; // 🔹 Reemplaza con tu usuario de GitHub
@@ -24,7 +25,7 @@ const SELECTED_REPOS = [
     description:
       "Aplicación web de musica que combina el estado emocional con el estado del clima.",
     details:
-      "Proyecto personal complejo y completo, en donde se combina el estado emocional del usuario con el clima para generar playlists de música actualizada periódicamente consumiendo la API de Spotify",
+      "Proyecto personal complejo y completo, en donde se combina el estado emocional del usuario con el clima para generar playlists de música actualizada periódicamente consumiendo la API de Spotify.",
     url: "https://github.com/NacheteSepulveda/MusicDayApp",
   },
 ];
@@ -47,17 +48,43 @@ const App = () => {
 
   return (
     <div className="container">
+      
+      {/* 🔹 Navbar */}
+      <nav className="navbar">
+        <ul>
+          <li><a href="#about">Inicio</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+        </ul>
+      </nav>
+
       {/* 🔹 Sección de Presentación */}
-      <section className="about">
+      <section id="about" className="about">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQEIOfpX6OBomA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724108312428?e=1747267200&v=beta&t=ggPbnPAOi1xLhHtYEpNmnJrRQR2XUV0lEgcNS08YW-8" alt="Tu Foto" className="profile-pic" />
         <h1>👋 ¡Hola! Soy Ignacio Sepúlveda</h1>
         <p>
           Egresado de Ingeniería en Informática en DUOC UC. Durante mi etapa academica y profesional he adquirido experiencia con lenguajes como Python, Javascript y Java. Me especializo en React.js y Express.js. 
           Me interesa profesionalizarme como desarrollador o DBA. Me considero una persona proactiva, empática y dispuesta tanto a trabajar en equipo como de manera individual. 🚀
         </p>
+
+
+        <h1>¡Contactame!</h1>
+        <div className="social-links">
+              <a href="https://www.linkedin.com/in/ignacio-sepúlveda-rivera-2a0404222/" target="_blank" className="social-link">
+                <FaLinkedin className="icon" /> LinkedIn
+              </a>
+              <a href="https://github.com/NacheteSepulveda" target="_blank" className="social-link">
+                <FaGithub className="icon" /> GitHub
+              </a>
+              <a href="mailto:ignaciosepulveda566@gmail.com" className="social-link">
+                <FaEnvelope className="icon" /> Correo
+              </a>
+        </div>
+
       </section>
 
       {/* 🔹 Sección de Experiencia */}
-      <section className="experience">
+      <section id="experience" className="experience">
         <h2>💼 Experiencia Profesional</h2>
         <div className="exp-content">
           <h3>Taller de Alfabetización Digital Para Adultos Mayores</h3>
@@ -116,7 +143,7 @@ const App = () => {
       
 
       {/* 🔹 Sección de Proyectos */}
-      <section className="projects">
+      <section id="projects" className="projects">
         <h2>🚀 Proyectos realizados y en qué consiste cada uno</h2>
         <div className="project-list">
           {repos.length > 0 ? (

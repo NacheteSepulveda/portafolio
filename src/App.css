@@ -13,12 +13,62 @@ body {
   padding: 20px;
 }
 
+
+.navbar {
+  background-color: #222;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.navbar ul li a:hover {
+  color: #007bff;
+}
+
 /* 🔹 Sección de Presentación */
 .about {
   background: #2a2a2a;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin-right: 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
 }
 
 .about h1 {
