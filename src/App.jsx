@@ -18,7 +18,7 @@ const SELECTED_REPOS = [
       "Sistema de agendamiento de hora orientada a estudiantes de odontología",
     details:
       "Esta aplicación facilita el agendamiento de hora para estudiantes de odontología de diversas universidades, permitiendo a los estudiantes seleccionar fechas, horarios y tratamientos disponibles para que realicen su atención al paciente de manera flexible.",
-    url: "https://github.com/NacheteSepulveda/PROYECTO_TITULO_IODONT",
+    url: "ignacios.pythonanywhere.com",
   },
   {
     name: "MusicDayApp",
@@ -153,7 +153,7 @@ const App = () => {
                 <p>{repo.description}</p>
                 <p className="details">{repo.details}</p>
                 <a href={repo.url} target="_blank" className="btn">
-                  Ver Proyecto (GitHub)
+                  Ver Proyecto
                 </a>
               </div>
             ))
